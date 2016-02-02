@@ -730,14 +730,5 @@
 -(void)AccountHandlingWebserviceFailWithError:(NSError *)error andResponse:(NSHTTPURLResponse*)response{
     
 }
--(void)updateLastRefreshTimeStampObsolete:(FMDatabase*)db
-{
-    
-     NSString* time_stamp = [MobileHelper stringFromDate:[NSDate date] andFormat:@"yyyy-MM-dd HH:mm:ss.SSS"];
-    
-    [db executeUpdate:[NSString stringWithFormat:@"UPDATE domain set last_refresh_timestamp = '%@'",time_stamp]];
-    
 
-    
-}
 @end

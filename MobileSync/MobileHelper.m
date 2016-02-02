@@ -549,24 +549,7 @@
     return entry;
 }
 
-+(NSString*)getServer_timeObsolete:(FMDatabase*)db{
-    
-    NSString* returnValue = @"INVALID";
-    
-    FMResultSet *rs = [db executeQuery:@"SELECT server_timestamp FROM domain LIMIT 1"]; // should be only 1 domain row
-    
-    if ([rs next])
-    {
-        returnValue = [rs stringForColumnIndex:[rs columnIndexForName:@"server_timestamp"]];
-        
-    }
-    
-    
-    
-    
-    return returnValue;
-    
-}
+
 +(NSString*)getLastEmployee_time:(FMDatabase*)db{
     
     NSString* returnValue = @"1970-01-01 00:00:00.000";
@@ -586,48 +569,7 @@
     return returnValue;
     
 }
-+(NSString*)calcEarliestTimStampObsolete:(FMDatabase*)db date:(NSString*)date1_timestamp
-{
-    
-    NSString* returnValue = @"1970-01-01 00:00:00.000";
-    
-    FMResultSet *rs = [db executeQuery:@"SELECT last_refresh_timestamp FROM domain LIMIT 1"]; // should be only 1 domain row
-    
-    if ([rs next])
-    {
-        NSString* last_refresh_timestamp = [rs stringForColumnIndex:[rs columnIndexForName:@"last_refresh_timestamp"]];
-        
-        if(last_refresh_timestamp.length > 0)
-        {
-            NSDate* date1 = [self DateFromDB:date1_timestamp];
-            NSDate* date2 = [self DateFromDB:last_refresh_timestamp];
-            
-            switch ([date1 compare:date2]){
-                case NSOrderedAscending:
-                    NSLog(@"NSOrderedAscending");
-                    returnValue = date1_timestamp;
-                    break;
-                case NSOrderedSame:
-                    NSLog(@"NSOrderedSame");
-                    returnValue = date1_timestamp;
-                    break;
-                case NSOrderedDescending:
-                    NSLog(@"NSOrderedDescending");
-                    returnValue= [MobileHelper stringFromDate:date2 andFormat:@"yyyy-MM-dd HH:mm:ss.SSS"];
-                    break;
-            }
-        }
 
-    }
-    else{
-        //use early date
-    }
-   
-    
-    
-    return returnValue;
-    
-}
 
 +(NSString*)getLastManager_time:(FMDatabase*)db{
     

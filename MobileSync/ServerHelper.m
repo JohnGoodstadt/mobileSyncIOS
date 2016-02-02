@@ -440,6 +440,10 @@ static NSString *const serverDatabasePath = @"/server.db";
             }
 
         }
+        
+        
+        
+        
     
        
     
@@ -831,66 +835,7 @@ static NSString *const serverDatabasePath = @"/server.db";
     
     return returnValue;
 }
--(int)checkIfClashWithRowsObsolete:(NSString*)domain_guid rows:(NSArray*)rows
-{
-    
-    //TODO: JUST FOR TABLE EMPLOYEES
-    
-    int returnValue = 0; //default exit value
-    
-    if(rows.count == 0){
-        return returnValue;
-    }
-    else if(rows.count > 0){
-        
-        NSDictionary* row = rows[0];
-        NSString* auto_increment_col = row[@"auto_increment_col"];
-        if(auto_increment_col == nil){ //is there an auto col present
-            return returnValue;
-        }else{
-            if(row[auto_increment_col] == nil){ //check if auto row is actually in row (mis spelt?)
-                return returnValue;
-            }
-        }
-    }
-    
-    //1. get min ID for each table
-    int minID = INT_MAX; // high number
-    NSString* min_row_guid = @"";
-     NSString* auto_increment_col = @"";
-    for (NSDictionary* row in rows)
-    {
-        
-        NSString* table_name = row[@"table_name"];
-        auto_increment_col = row[@"auto_increment_col"];
-        
-        if([table_name isEqualToString:@"employees"])
-        {
-            
-            NSString* ID = row[auto_increment_col];
-            
-            if([ID intValue] <  minID){
-                minID = [ID intValue];
-                min_row_guid = row[@"row_guid"] ;
-            }
-            
-        }
-        
-    }
-    
-    //2. do any rows clash with this ID
-    BOOL clashed = [self checkIfClashWithID:minID table_name:@"employees" col_name:auto_increment_col domain_guid:domain_guid row_guid:min_row_guid];
-    
-    
 
-    if(clashed){
-        returnValue = minID;
-    }
-    
-    
-    
-    return returnValue;
-}
 -(int)minIDOfClashWithTable:(NSString*)domain_guid table_name:(NSString*)table_name rows:(NSArray*)rows table:(NSDictionary*)table
 {
     

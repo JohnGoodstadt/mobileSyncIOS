@@ -468,17 +468,5 @@ static NSString *const mobileDatabasePath = @"/mobile1.db";
 -(void)AccountHandlingWebserviceFailWithError:(NSError *)error andResponse:(NSHTTPURLResponse*)response{
     
 }
--(NSString*)manager_email_addressOBSOLETE:(NSString*)manager_guid
-{
-    
-    NSString* returnValue = @"";
-    
-    NSDictionary* entry = [MobileHelper getManager:self.db row_guid:manager_guid];
-    
-    if(entry){
-        returnValue = entry[@"email_address"];
-    }
-    
-    return returnValue;
-}
+
 @end

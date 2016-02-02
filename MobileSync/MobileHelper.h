@@ -34,7 +34,6 @@
 +(void)updateSentToServerOKDB:(FMDatabase*)db tables:(NSArray *)tables;
 //+ (void)updateServerTimeStamp:(FMDatabase*)db time_stamp:(NSString *)time_stamp;
 + (NSArray*)getEmployees:(FMDatabase*)db;
-+ (NSString*)getServer_timeObsolete:(FMDatabase*)db;
 +(void)INSERTEmployee:(FMDatabase*)db first_name:(NSString*)first_name last_name:(NSString*)last_name manager_id:(NSString*)manager_id;
 +(void)INSERTManager:(FMDatabase*)db first_name:(NSString*)first_name last_name:(NSString*)last_name;
 +(void)updateLogin:(FMDatabase*)db login_id:(NSString*)login_id;

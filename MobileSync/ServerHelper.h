@@ -19,7 +19,6 @@
 
 #pragma mark Server Endpoints
 -(NSString*)UPDATEServer:(NSString*)json;
--(NSString*)refreshByDomainObsolete:(NSString*)domain client_timestamp:(NSString *)client_timestamp;
 -(NSString*)refreshByDomain:(NSString*)domain client_timestamp:(NSString*)client_timestamp tableTimeStamps:(NSArray*)table_time_stamps;
 -(void)addOneEmployee:(NSString*)useDomain;
 
