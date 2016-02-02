@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3219D9761C1857E00093092C /* SendToServerWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3219D9751C1857E00093092C /* SendToServerWebservice.m */; };
+		3219D9771C1857E00093092C /* SendToServerWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3219D9751C1857E00093092C /* SendToServerWebservice.m */; };
+		32287F1F1C188D3A007E946D /* MobileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32287F1E1C188D3A007E946D /* MobileHelper.m */; };
+		32287F221C188E70007E946D /* GetRowsFromServerWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 32287F211C188E70007E946D /* GetRowsFromServerWebservice.m */; };
+		32287F291C19C66A007E946D /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32287F281C19C66A007E946D /* ServerHelper.m */; };
+		32287F2A1C19C68F007E946D /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32287F281C19C66A007E946D /* ServerHelper.m */; };
+		3237F3001C15E97E002D1771 /* FMDBBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3237F2FF1C15E97E002D1771 /* FMDBBaseClass.m */; };
+		3237F3071C15F36C002D1771 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3237F3061C15F36C002D1771 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3237F3081C15F36C002D1771 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3237F3061C15F36C002D1771 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3237F30E1C15F91C002D1771 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3237F30D1C15F91C002D1771 /* UIKit.framework */; };
+		3237F30F1C15F927002D1771 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3237F30D1C15F91C002D1771 /* UIKit.framework */; };
+		3237F3131C15FA02002D1771 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3237F3111C15FA02002D1771 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3237F3141C15FA02002D1771 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3237F3111C15FA02002D1771 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3237F3151C15FA02002D1771 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3237F3121C15FA02002D1771 /* README.md */; };
+		3237F3161C15FA02002D1771 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3237F3121C15FA02002D1771 /* README.md */; };
+		327A66781C2439BD00177D5F /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A66771C2439BD00177D5F /* ManagerViewController.m */; };
+		327B71F11C15DEBF00588160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B71F01C15DEBF00588160 /* main.m */; };
+		327B71F41C15DEBF00588160 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B71F31C15DEBF00588160 /* AppDelegate.m */; };
+		327B71F71C15DEBF00588160 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B71F61C15DEBF00588160 /* FirstViewController.m */; };
+		327B71FA1C15DEBF00588160 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B71F91C15DEBF00588160 /* SecondViewController.m */; };
+		327B71FD1C15DEBF00588160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327B71FB1C15DEBF00588160 /* Main.storyboard */; };
+		327B71FF1C15DEBF00588160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327B71FE1C15DEBF00588160 /* Assets.xcassets */; };
+		327B72021C15DEBF00588160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327B72001C15DEBF00588160 /* LaunchScreen.storyboard */; };
+		327B720D1C15DEBF00588160 /* MobileSyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B720C1C15DEBF00588160 /* MobileSyncTests.m */; };
+		327B72221C15DF2A00588160 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B72191C15DF2A00588160 /* FMDatabase.m */; };
+		327B72231C15DF2A00588160 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B72191C15DF2A00588160 /* FMDatabase.m */; };
+		327B72241C15DF2A00588160 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B721B1C15DF2A00588160 /* FMResultSet.m */; };
+		327B72251C15DF2A00588160 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B721B1C15DF2A00588160 /* FMResultSet.m */; };
+		327B72261C15DF2A00588160 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B721D1C15DF2A00588160 /* FMDatabaseQueue.m */; };
+		327B72271C15DF2A00588160 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B721D1C15DF2A00588160 /* FMDatabaseQueue.m */; };
+		327B72281C15DF2A00588160 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B721F1C15DF2A00588160 /* FMDatabaseAdditions.m */; };
+		327B72291C15DF2A00588160 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B721F1C15DF2A00588160 /* FMDatabaseAdditions.m */; };
+		327B722A1C15DF2A00588160 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B72211C15DF2A00588160 /* FMDatabasePool.m */; };
+		327B722B1C15DF2A00588160 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B72211C15DF2A00588160 /* FMDatabasePool.m */; };
+		327B722E1C15DF8100588160 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 327B722D1C15DF8100588160 /* libsqlite3.dylib */; };
+		327B722F1C15DF9900588160 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 327B722D1C15DF8100588160 /* libsqlite3.dylib */; };
+		32BA91F61C218CEF00D95989 /* AccountHandlingWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BA91F51C218CEF00D95989 /* AccountHandlingWebservice.m */; };
+		32CB31641C202FD20033FC7D /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CB31631C202FD20033FC7D /* ServerViewController.m */; };
+		5202CE3F1C4C2FD900BB3A18 /* EditEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202CE3D1C4C2FD900BB3A18 /* EditEmployeeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327B72091C15DEBF00588160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327B71E41C15DEBF00588160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327B71EB1C15DEBF00588160;
+			remoteInfo = MobileSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3219D9741C1857E00093092C /* SendToServerWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendToServerWebservice.h; sourceTree = "<group>"; };
+		3219D9751C1857E00093092C /* SendToServerWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendToServerWebservice.m; sourceTree = "<group>"; };
+		32287F1D1C188D3A007E946D /* MobileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileHelper.h; sourceTree = "<group>"; };
+		32287F1E1C188D3A007E946D /* MobileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileHelper.m; sourceTree = "<group>"; };
+		32287F201C188E70007E946D /* GetRowsFromServerWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRowsFromServerWebservice.h; sourceTree = "<group>"; };
+		32287F211C188E70007E946D /* GetRowsFromServerWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRowsFromServerWebservice.m; sourceTree = "<group>"; };
+		32287F271C19C66A007E946D /* ServerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerHelper.h; sourceTree = "<group>"; };
+		32287F281C19C66A007E946D /* ServerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerHelper.m; sourceTree = "<group>"; };
+		3237F2FE1C15E97E002D1771 /* FMDBBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBBaseClass.h; sourceTree = "<group>"; };
+		3237F2FF1C15E97E002D1771 /* FMDBBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBBaseClass.m; sourceTree = "<group>"; };
+		3237F3051C15F36C002D1771 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		3237F3061C15F36C002D1771 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		3237F30D1C15F91C002D1771 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3237F3101C15FA02002D1771 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		3237F3111C15FA02002D1771 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		3237F3121C15FA02002D1771 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		327A66761C2439BD00177D5F /* ManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
+		327A66771C2439BD00177D5F /* ManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
+		327B71EC1C15DEBF00588160 /* MobileSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327B71F01C15DEBF00588160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		327B71F21C15DEBF00588160 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		327B71F31C15DEBF00588160 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		327B71F51C15DEBF00588160 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		327B71F61C15DEBF00588160 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		327B71F81C15DEBF00588160 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		327B71F91C15DEBF00588160 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		327B71FC1C15DEBF00588160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		327B71FE1C15DEBF00588160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327B72011C15DEBF00588160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		327B72031C15DEBF00588160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327B72081C15DEBF00588160 /* MobileSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327B720C1C15DEBF00588160 /* MobileSyncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileSyncTests.m; sourceTree = "<group>"; };
+		327B720E1C15DEBF00588160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327B72171C15DF2A00588160 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		327B72181C15DF2A00588160 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		327B72191C15DF2A00588160 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		327B721A1C15DF2A00588160 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		327B721B1C15DF2A00588160 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		327B721C1C15DF2A00588160 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		327B721D1C15DF2A00588160 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		327B721E1C15DF2A00588160 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		327B721F1C15DF2A00588160 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		327B72201C15DF2A00588160 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		327B72211C15DF2A00588160 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		327B722D1C15DF8100588160 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		32BA91F41C218CEF00D95989 /* AccountHandlingWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountHandlingWebservice.h; sourceTree = "<group>"; };
+		32BA91F51C218CEF00D95989 /* AccountHandlingWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountHandlingWebservice.m; sourceTree = "<group>"; };
+		32CB31621C202FD20033FC7D /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
+		32CB31631C202FD20033FC7D /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
+		5202CE3C1C4C2FD900BB3A18 /* EditEmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditEmployeeViewController.h; sourceTree = "<group>"; };
+		5202CE3D1C4C2FD900BB3A18 /* EditEmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditEmployeeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327B71E91C15DEBF00588160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3237F30E1C15F91C002D1771 /* UIKit.framework in Frameworks */,
+				327B722E1C15DF8100588160 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327B72051C15DEBF00588160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3237F30F1C15F927002D1771 /* UIKit.framework in Frameworks */,
+				327B722F1C15DF9900588160 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3219D9731C1857B90093092C /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				3219D9741C1857E00093092C /* SendToServerWebservice.h */,
+				3219D9751C1857E00093092C /* SendToServerWebservice.m */,
+				32287F201C188E70007E946D /* GetRowsFromServerWebservice.h */,
+				32287F211C188E70007E946D /* GetRowsFromServerWebservice.m */,
+				32BA91F41C218CEF00D95989 /* AccountHandlingWebservice.h */,
+				32BA91F51C218CEF00D95989 /* AccountHandlingWebservice.m */,
+			);
+			name = Webservices;
+			sourceTree = "<group>";
+		};
+		327B71E31C15DEBF00588160 = {
+			isa = PBXGroup;
+			children = (
+				3237F30D1C15F91C002D1771 /* UIKit.framework */,
+				327B722D1C15DF8100588160 /* libsqlite3.dylib */,
+				327B71EE1C15DEBF00588160 /* MobileSync */,
+				327B720B1C15DEBF00588160 /* MobileSyncTests */,
+				327B71ED1C15DEBF00588160 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		327B71ED1C15DEBF00588160 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327B71EC1C15DEBF00588160 /* MobileSync.app */,
+				327B72081C15DEBF00588160 /* MobileSyncTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327B71EE1C15DEBF00588160 /* MobileSync */ = {
+			isa = PBXGroup;
+			children = (
+				327B71F21C15DEBF00588160 /* AppDelegate.h */,
+				327B71F31C15DEBF00588160 /* AppDelegate.m */,
+				327B71FE1C15DEBF00588160 /* Assets.xcassets */,
+				327B71F51C15DEBF00588160 /* FirstViewController.h */,
+				327B71F61C15DEBF00588160 /* FirstViewController.m */,
+				327B71F81C15DEBF00588160 /* SecondViewController.h */,
+				327B71F91C15DEBF00588160 /* SecondViewController.m */,
+				32CB31621C202FD20033FC7D /* ServerViewController.h */,
+				32CB31631C202FD20033FC7D /* ServerViewController.m */,
+				5202CE3C1C4C2FD900BB3A18 /* EditEmployeeViewController.h */,
+				5202CE3D1C4C2FD900BB3A18 /* EditEmployeeViewController.m */,
+				327A66761C2439BD00177D5F /* ManagerViewController.h */,
+				327A66771C2439BD00177D5F /* ManagerViewController.m */,
+				327B722C1C15DF3100588160 /* FMDB */,
+				327B72031C15DEBF00588160 /* Info.plist */,
+				327B71FB1C15DEBF00588160 /* Main.storyboard */,
+				327B71EF1C15DEBF00588160 /* Supporting Files */,
+				3219D9731C1857B90093092C /* Webservices */,
+			);
+			path = MobileSync;
+			sourceTree = "<group>";
+		};
+		327B71EF1C15DEBF00588160 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				327B72001C15DEBF00588160 /* LaunchScreen.storyboard */,
+				3237F3101C15FA02002D1771 /* OpenUDID.h */,
+				3237F3111C15FA02002D1771 /* OpenUDID.m */,
+				3237F3121C15FA02002D1771 /* README.md */,
+				3237F3051C15F36C002D1771 /* KeychainItemWrapper.h */,
+				3237F3061C15F36C002D1771 /* KeychainItemWrapper.m */,
+				327B71F01C15DEBF00588160 /* main.m */,
+				32287F1D1C188D3A007E946D /* MobileHelper.h */,
+				32287F1E1C188D3A007E946D /* MobileHelper.m */,
+				32287F271C19C66A007E946D /* ServerHelper.h */,
+				32287F281C19C66A007E946D /* ServerHelper.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		327B720B1C15DEBF00588160 /* MobileSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				3237F2FE1C15E97E002D1771 /* FMDBBaseClass.h */,
+				3237F2FF1C15E97E002D1771 /* FMDBBaseClass.m */,
+				327B720C1C15DEBF00588160 /* MobileSyncTests.m */,
+				327B720E1C15DEBF00588160 /* Info.plist */,
+			);
+			path = MobileSyncTests;
+			sourceTree = "<group>";
+		};
+		327B722C1C15DF3100588160 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				327B72171C15DF2A00588160 /* FMDB.h */,
+				327B72181C15DF2A00588160 /* FMDatabase.h */,
+				327B72191C15DF2A00588160 /* FMDatabase.m */,
+				327B721A1C15DF2A00588160 /* FMResultSet.h */,
+				327B721B1C15DF2A00588160 /* FMResultSet.m */,
+				327B721C1C15DF2A00588160 /* FMDatabaseQueue.h */,
+				327B721D1C15DF2A00588160 /* FMDatabaseQueue.m */,
+				327B721E1C15DF2A00588160 /* FMDatabaseAdditions.h */,
+				327B721F1C15DF2A00588160 /* FMDatabaseAdditions.m */,
+				327B72201C15DF2A00588160 /* FMDatabasePool.h */,
+				327B72211C15DF2A00588160 /* FMDatabasePool.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327B71EB1C15DEBF00588160 /* MobileSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327B72111C15DEBF00588160 /* Build configuration list for PBXNativeTarget "MobileSync" */;
+			buildPhases = (
+				327B71E81C15DEBF00588160 /* Sources */,
+				327B71E91C15DEBF00588160 /* Frameworks */,
+				327B71EA1C15DEBF00588160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileSync;
+			productName = MobileSync;
+			productReference = 327B71EC1C15DEBF00588160 /* MobileSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327B72071C15DEBF00588160 /* MobileSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327B72141C15DEBF00588160 /* Build configuration list for PBXNativeTarget "MobileSyncTests" */;
+			buildPhases = (
+				327B72041C15DEBF00588160 /* Sources */,
+				327B72051C15DEBF00588160 /* Frameworks */,
+				327B72061C15DEBF00588160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327B720A1C15DEBF00588160 /* PBXTargetDependency */,
+			);
+			name = MobileSyncTests;
+			productName = MobileSyncTests;
+			productReference = 327B72081C15DEBF00588160 /* MobileSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327B71E41C15DEBF00588160 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CDL;
+				TargetAttributes = {
+					327B71EB1C15DEBF00588160 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = VVSCGT8QD9;
+					};
+					327B72071C15DEBF00588160 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 327B71EB1C15DEBF00588160;
+					};
+				};
+			};
+			buildConfigurationList = 327B71E71C15DEBF00588160 /* Build configuration list for PBXProject "MobileSync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 327B71E31C15DEBF00588160;
+			productRefGroup = 327B71ED1C15DEBF00588160 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327B71EB1C15DEBF00588160 /* MobileSync */,
+				327B72071C15DEBF00588160 /* MobileSyncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327B71EA1C15DEBF00588160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327B72021C15DEBF00588160 /* LaunchScreen.storyboard in Resources */,
+				327B71FF1C15DEBF00588160 /* Assets.xcassets in Resources */,
+				327B71FD1C15DEBF00588160 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327B72061C15DEBF00588160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327B71E81C15DEBF00588160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327B72241C15DF2A00588160 /* FMResultSet.m in Sources */,
+				327B71FA1C15DEBF00588160 /* SecondViewController.m in Sources */,
+				3237F3131C15FA02002D1771 /* OpenUDID.m in Sources */,
+				327B71F41C15DEBF00588160 /* AppDelegate.m in Sources */,
+				32BA91F61C218CEF00D95989 /* AccountHandlingWebservice.m in Sources */,
+				32CB31641C202FD20033FC7D /* ServerViewController.m in Sources */,
+				327B72261C15DF2A00588160 /* FMDatabaseQueue.m in Sources */,
+				327B722A1C15DF2A00588160 /* FMDatabasePool.m in Sources */,
+				32287F291C19C66A007E946D /* ServerHelper.m in Sources */,
+				3237F3151C15FA02002D1771 /* README.md in Sources */,
+				3219D9761C1857E00093092C /* SendToServerWebservice.m in Sources */,
+				327B71F71C15DEBF00588160 /* FirstViewController.m in Sources */,
+				3237F3071C15F36C002D1771 /* KeychainItemWrapper.m in Sources */,
+				32287F221C188E70007E946D /* GetRowsFromServerWebservice.m in Sources */,
+				5202CE3F1C4C2FD900BB3A18 /* EditEmployeeViewController.m in Sources */,
+				32287F1F1C188D3A007E946D /* MobileHelper.m in Sources */,
+				327B72221C15DF2A00588160 /* FMDatabase.m in Sources */,
+				327B71F11C15DEBF00588160 /* main.m in Sources */,
+				327B72281C15DF2A00588160 /* FMDatabaseAdditions.m in Sources */,
+				327A66781C2439BD00177D5F /* ManagerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327B72041C15DEBF00588160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32287F2A1C19C68F007E946D /* ServerHelper.m in Sources */,
+				327B72251C15DF2A00588160 /* FMResultSet.m in Sources */,
+				327B722B1C15DF2A00588160 /* FMDatabasePool.m in Sources */,
+				3237F3161C15FA02002D1771 /* README.md in Sources */,
+				327B72271C15DF2A00588160 /* FMDatabaseQueue.m in Sources */,
+				3219D9771C1857E00093092C /* SendToServerWebservice.m in Sources */,
+				3237F3141C15FA02002D1771 /* OpenUDID.m in Sources */,
+				327B720D1C15DEBF00588160 /* MobileSyncTests.m in Sources */,
+				3237F3001C15E97E002D1771 /* FMDBBaseClass.m in Sources */,
+				327B72231C15DF2A00588160 /* FMDatabase.m in Sources */,
+				327B72291C15DF2A00588160 /* FMDatabaseAdditions.m in Sources */,
+				3237F3081C15F36C002D1771 /* KeychainItemWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327B720A1C15DEBF00588160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327B71EB1C15DEBF00588160 /* MobileSync */;
+			targetProxy = 327B72091C15DEBF00588160 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		327B71FB1C15DEBF00588160 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327B71FC1C15DEBF00588160 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		327B72001C15DEBF00588160 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327B72011C15DEBF00588160 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		327B720F1C15DEBF00588160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		327B72101C15DEBF00588160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		327B72121C15DEBF00588160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MobileSync/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.cdl.MobileSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		327B72131C15DEBF00588160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MobileSync/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.cdl.MobileSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		327B72151C15DEBF00588160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MobileSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.cdl.MobileSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileSync.app/MobileSync";
+			};
+			name = Debug;
+		};
+		327B72161C15DEBF00588160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MobileSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.cdl.MobileSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileSync.app/MobileSync";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327B71E71C15DEBF00588160 /* Build configuration list for PBXProject "MobileSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327B720F1C15DEBF00588160 /* Debug */,
+				327B72101C15DEBF00588160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327B72111C15DEBF00588160 /* Build configuration list for PBXNativeTarget "MobileSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327B72121C15DEBF00588160 /* Debug */,
+				327B72131C15DEBF00588160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327B72141C15DEBF00588160 /* Build configuration list for PBXNativeTarget "MobileSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327B72151C15DEBF00588160 /* Debug */,
+				327B72161C15DEBF00588160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 327B71E41C15DEBF00588160 /* Project object */;
+}
