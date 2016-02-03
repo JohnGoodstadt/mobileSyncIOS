@@ -21,3 +21,4 @@ This readme details how to run the sample and what to expect.
 7. The App users OpenUDID to create a unique device ID. Thso could be any otehr library as long as each call returns an identicle string.
 8. The App use FMDatabase for sqlite DB calls. Any other provider could be used.
 9. Timestamps in the App are sortable text e.g. '2016-01-31 10:11:12.123' but unix times could also be used. 
+10. This code has been developed and tested against XCode 7.2 and IOS 9.2.
