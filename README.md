@@ -8,7 +8,7 @@ This gitHub is an IOS Sample that proves the pattern with Unit Tests built to te
 see:
 https://docs.google.com/document/d/1GeMxb9cgLpHkXJOmDvy90A3BQn-p774IRR40ng65Ki8/edit?usp=sharing
 
-for a description.
+for full details.
 
 This readme details how to run the sample and what to expect.
 
