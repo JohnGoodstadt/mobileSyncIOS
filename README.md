@@ -20,3 +20,4 @@ This readme details how to run the sample and what to expect.
 6. The app users a simple employee, manager structure where the manager table is a foreign key into the employee table. The holds simple data items of first name, Last Name and email_address.
 7. The App users OpenUDID to create a unique device ID. Thso could be any otehr library as long as each call returns an identicle string.
 8. The App use FMDatabase for sqlite DB calls. Any other provider could be used.
+9. Timestamps in the App are sortable text '2016-01-31 10:11:12.123' but unix times could also be used. 
